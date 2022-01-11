@@ -110,14 +110,49 @@ def templateMatching(file, type):
             cv2.rectangle(image_rgb, pt, (pt[0] + w, pt[1] + h), (0,0,255), 2)
         cv2.imwrite('res.png',image_rgb)
 
+def convexHull(file):
+    # https://learnopencv.com/convex-hull-using-opencv-in-python-and-c/
+    image = cv2.imread(file, cv2.IMREAD_COLOR)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    blur = cv2.blur(gray, (5,5))
+    ret, thresh = cv2.threshold(blur, 127, 255, cv2.THRESH_BINARY)
+
+    # contour retrieval mode, contour approximation method
+    contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    # print(contours)
+
+    # create hull array for convex hull points
+    hull = []
+
+    # calculate points for each contour
+    for i in range(len(contours)):
+        # creating convex hull object for each contour
+        hull.append(cv2.convexHull(contours[i],False))
+
+    # create an empty black image
+    # drawing = np.zeros((thresh.shape[0], thresh.shape[1], 3), np.uint8)
+
+    # draw contours and hull points 
+    for i in range(len(contours)):
+        color_contours = (0, 0, 255)    # red for contours
+        color = (255, 0 , 0)    # blue for convex hull
+        # draw ith contour
+        cv2.drawContours(image, contours, i, color_contours, 1, 8, hierarchy)
+        # draw ith convex hull object
+        cv2.drawContours(image, hull, i, color, 1, 8)
+
+    cv2.imwrite('C:/users/lolly/OneDrive/Documents/UCLA Textbooks/180DA-WarmUp/Images/hand-convex-hull-2.jpg', image)
+
+
 def main():
-    file = 'C:/users/lolly/OneDrive/Documents/UCLA Textbooks/180DA-WarmUp/flowers-2.jpg'
+    file = 'C:/users/lolly/OneDrive/Documents/UCLA Textbooks/180DA-WarmUp/Images/hand.jpg'
     # convertColorScheme(file, 'gray')
     # convertColorScheme(file, 'RGB')
     # convertColorScheme(file, 'HSV')
     # thresholding(file, "adaptive")
     # edgeDetection(file)
-    templateMatching(file, 'multiple')
+    # templateMatching(file, 'multiple')
+    convexHull(file)
 
 if __name__ == '__main__':
     main() 
