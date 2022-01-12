@@ -13,5 +13,12 @@ Grace Zhao, Group 5
 The images used and produced by the functions implemented in section 5.1 are located in the Images folder.
 
 <h3>Section 5.2:</h3>
-    - implemented a rudimentary object tracker using basic template matching 
+    <ul>
+        <li>
+            implemented a rudimentary object tracker using basic template matching 
+        </li>
+    </ul>
+   
     <img src = 'frame_screenshot_12.01.2022.png' height="200">
+
+    The template image located in the Images folder.
