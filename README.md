@@ -19,6 +19,6 @@ The images used and produced by the functions implemented in section 5.1 are loc
         </li>
     </ul>
    
-    <img src = 'frame_screenshot_12.01.2022.png' height="200"/>
+    <img src = 'frame_screenshot_12.01.2022.png' height="200"></img>
 
     The template image located in the Images folder.
