@@ -12,4 +12,4 @@ The images used and produced by the functions implemented in section 5.1 are loc
 
 <h3>Section 5.2:</h3>
     - implemented a rudimentary object tracker using basic template matching 
-    <img src = 'frame_screenshot_12.01.2022.png' height="80">
+    <img src = 'frame_screenshot_12.01.2022.png' height="200">
