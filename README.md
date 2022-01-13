@@ -16,11 +16,11 @@ The images used and produced by the functions implemented in section 5.1 are loc
     <ul>
         <li>
             implemented a rudimentary object tracker using basic template matching 
-            <img src = "Images\object-template.png"></img>
         </li>
     </ul>
    
 <img src = 'frame_screenshot_12.01.2022.png' height="200"></img>
+<img src = "Images\object-template.png" height="50"></img>
 
 The template image is located in the Images folder.
 
