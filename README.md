@@ -37,14 +37,14 @@ The template image is located in the Images folder.
             <img src = 'monochrome_thresholding_2.png' height="200"></img> 
         </li>
         <li>
-            Due to my use pf RGB values, the color detector was sensitive to changes in light. The color detection worked best in medium-lit conditions. If the object was too close or too for away from my desk lamp, the color was not detected correctly.
+            Because I performed thresholding based on RGB values, the color detector was sensitive to changes in lighting. The color detection worked best in medium-lit conditions. If the object was too close or too for away from my desk lamp, the color was not detected correctly. <br/>
             <img src = 'monochrome_thresholding_3.png' height="200"></img> 
         </li>
         <li>
-            Using the color picker helped me to determine more accurately the range of RGB values I should use for the threshold. Due to the shape of my object, it was suceptible to having dark and light spots. Using the RGB picker helped me find the largest and smallest values I needed for each channel. However, because I increased the threshold ranges, that also caused the color detector to pick up background colors. 
-            <img src = 'monochrome_thresholding_7.png'></img>
+            Using the color picker helped me to determine more accurately the range of RGB values I should use for the threshold. The shape of my object made it susceptible to showing dark and light spots in the video capture. Using the RGB picker helped me find the largest and smallest values I needed for each channel. However, because I increased the threshold ranges, that also caused the color detector to pick up other background colors. 
+            <img src = 'monochrome_thresholding_7.png' height="200"></img>
         </li>
         <li>
-            <img src = 'dominant_color_1.png'></img>
+            <br/><img src = 'dominant_color_1.png'></img>
         </li>
     </ol>
