@@ -16,6 +16,7 @@ The images used and produced by the functions implemented in section 5.1 are loc
     <ul>
         <li>
             implemented a rudimentary object tracker using basic template matching 
+            <img src = "Images\object-template.png"></img>
         </li>
     </ul>
    
