@@ -38,7 +38,7 @@ The template image is located in the Images folder.
             <img src = 'monochrome_thresholding_2.png' height="200"></img> 
         </li>
         <li>
-            Because I performed thresholding based on RGB values, the color detector was sensitive to changes in lighting. The color detection worked best in medium-lit conditions. If the object was too close or too for away from my desk lamp, the color was not detected correctly. <br/>
+            Because I performed thresholding based on RGB values, the perceived color of the object was sensitive to changes in lighting. The color detection worked best in medium-lit conditions. If the object was too close or too for away from my desk lamp, the color was not detected correctly. <br/>
             <img src = 'monochrome_thresholding_3.png' height="200"></img> 
         </li>
         <li>
